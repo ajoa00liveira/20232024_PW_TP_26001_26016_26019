@@ -1,0 +1,60 @@
+body {
+    margin: 0; /* Remove as margens padrão do body */
+}
+
+.about-us-container, .about_us-container {
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding para alinhamento perfeito */
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px; /* Ajuste conforme necessário */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+}
+
+.about-us-container {
+    background: url('../../../assets/images/background_image_art.png') lightgray center / cover repeat; 
+}
+
+.about-us-image, .about_us-secondimage {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
+    height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
+}
+
+.about-us-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
+    padding: 20px; /* Adiciona padding */
+    align-items: center;
+}
+
+.about-museum-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.text-museum {
+    flex: 1;
+}
+.text-museum h2 {
+    margin: 0 0 10px;
+}
+.text-museum p {
+    margin: 0;
+}
+.image-museum img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
