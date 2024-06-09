@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './art.component.html',
   styleUrl: './art.component.scss'
 })
+
 export class ArtComponent {
 
 }
+
