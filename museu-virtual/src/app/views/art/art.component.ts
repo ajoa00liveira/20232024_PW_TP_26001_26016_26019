@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-art',
   standalone: true,
@@ -11,4 +12,5 @@ import { Component } from '@angular/core';
 export class ArtComponent {
 
 }
+
 
