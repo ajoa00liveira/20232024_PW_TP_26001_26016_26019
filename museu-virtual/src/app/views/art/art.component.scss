@@ -1,8 +1,3 @@
-.section-1, .section-2, .exhibitions, .gallery{
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .section-1, .section-2 {
   display: flex;
   align-items: center;
@@ -66,6 +61,7 @@
     font-weight: 400;
     text-align: center;
     color: white; 
+    margin-right: 20px;
   }
 }
 
@@ -103,57 +99,68 @@
   background-color: #333;
 }
 
-/* Adicionando alinhamento à esquerda e centralização */
-.section-1 {
-  justify-content: flex-start;
-}
-
-.section-2 {
-  justify-content: flex-start;
-  padding-right: 20px; /* Adiciona padding à direita para afastar o texto da imagem */
-}
-
 .exhibitions {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background-color: #d4484b;
   text-align: center;
-  padding: 20px;
+  width: 100%;
+  height: 1058px;
   
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: white;
-  }
+  .exhibition-text{
+    height: 20%;
 
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #433C3C;
+    h2 {
+      font-size: 40px;
+      color: white;
+    }
+  
+    p {
+      margin-bottom: 20px;
+      color: #433C3C;
+    }
   }
 
   .exhibition-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    gap:50px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
 
     .exhibition-item {
-      width: 30%;
-      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 402px;
+      height: 406px;
+      z-index: 0;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
 
       img {
-        width: 402px;
+        width: 100%;
         height: 311px;
+        object-fit: cover;
+        z-index: 1;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
       }
 
       p {
-        font-size: 1.2rem;
-        margin-top: 10px;
+        font-size: 24px;
         color: black;
-        position: relative; /* Para alinhar a caixa branca */
         z-index: 1; /* Garante que o texto esteja acima da caixa branca */
       }
 
       .comment-box {
-        //aquiiiiiiiii
+        z-index: 0;
       }
     }   
   }
