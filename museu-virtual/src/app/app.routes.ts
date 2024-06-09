@@ -6,6 +6,8 @@ import { EventsComponent } from './views/events/events.component';
 import { MapComponent } from './views/map/map.component';
 import { NewsComponent } from './views/news/news.component';
 import { ScheduleComponent } from './views/schedule/schedule.component';
+import { ArtComponent } from './views/art/art.component';
+
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -14,6 +16,8 @@ export const routes: Routes = [
     { path: 'map', component: MapComponent},
     { path: 'news', component: NewsComponent},
     { path: 'schedule', component: ScheduleComponent},
+    { path: 'art', component:ArtComponent},
+
     
     { path: '**', component: PageNotFoundComponent } //Tem de ficar por último
 ];
