@@ -164,20 +164,33 @@ body {
   
       .exhibition-item {
         width: 30%;
-        margin-bottom: 20px;
-        position: relative; /* Para posicionamento do box branco */
+        margin-bottom: 100px;
+        position: relative;
       }
       
       .exhibition-item img {
         width: 402px;
         height: 311px;
-        border-radius: 10px;
       }
       
       .exhibition-item p {
         font-size: 1.2rem;
         margin-top: 10px;
         color: black;
+        position: relative; /* Para alinhar a caixa branca */
+        z-index: 1; /* Garante que o texto esteja acima da caixa branca */
+      }
+      
+      .exhibition-item .comment-box {
+        position: absolute;
+        right: 0; /* Posicionando a caixa branca à direita */
+        bottom: -68px; 
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 0;
+        width: 402px;
       }
     }
   }
