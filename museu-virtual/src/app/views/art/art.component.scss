@@ -1,199 +1,163 @@
-body {
-    margin: 0; /* Remove as margens padrão do body */
+.section-1, .section-2, .exhibitions, .gallery{
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.art-container, .divison_of_Art-container {
-    display: flex;
-    align-items: center;
-    padding: 0; /* Remove padding para alinhamento perfeito */
-    box-sizing: border-box;
-    width: 100%;
-    height: 500px; /* Ajuste conforme necessário */
-    margin-bottom: 20px; /* Espaçamento entre as seções */
+.section-1, .section-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
 }
 
-.art-container {
-    background: url('../../../assets/images/background_image_art.png') lightgray center / cover repeat; 
+.section-1 {
+  background: url('../../../assets/images/tiles/red-tile.png') repeat; 
+  height: 553px;
 }
 
-.art-image, .divison_of_Art-secondimage {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
-    height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
+.section-2 {
+  height: 636px;
 }
 
-.art-image img, .divison_of_Art-secondimage img {
-    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
-    max-height: 100%; /* Garante que as imagens não ultrapassem o contêiner */
-    border-radius: 10px;
+.left-in-section {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
+  height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
 }
 
-.art-image img {
-    border: 10px solid #B88840; /* Cor de fundo da moldura */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50); /* Sombra */
+.image-border-1{
+  max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+  max-height: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+  border: 10px solid #B88840; /* Cor de fundo da moldura */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50); /* Sombra */
+  border-radius: 10px;
 }
 
-.art-description {
-    display: flex;
-    flex-direction: column;
-    width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
-    padding: 20px; /* Adiciona padding */
-    align-items: center;
-}
-.divison_of_Art-description {
-    display: flex;
-    flex-direction: column;
-    width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
-    padding: 20px; /* Adiciona padding */
-    align-items: left;
-
+.image-border-2{
+  max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+  max-height: 80%; /* Garante que as imagens não ultrapassem o contêiner */
+  border-radius: 5px;
 }
 
+.right-in-section-1, .right-in-section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
+  align-items: center;
+  padding-left: 70px;
+}
 
-.art-description h1 {
-    font-family: Kufam;
+.right-in-section-1{
+
+  h1 {
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 10px;
-    text-transform: capitalize;
     text-align: center;
-    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50.5%, #FBBD44 100%);
+    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50%, #FBBD44 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+  }
 
-.art-description p {
-    font-family: Kufam;
-    font-size: 20px;
+  p {
     font-weight: 400;
-    text-transform: capitalize;
     text-align: center;
     color: white; 
+  }
 }
 
-.art-description h1 {
-    font-family: Kufam;
+.right-in-section-2{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  h1{
     font-size: 60px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    text-align: center;
-    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50.5%, #FBBD44 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.art-description p {
-    font-family: Kufam;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: center;
-    color: white; /* Cor do texto em branco */
-}
-.divison_of_Art-description h1 {
-    font-family: Kufam;
-    font-size: 60px;
-    font-weight: 500;
     margin-bottom: 10px;
     text-transform: capitalize;
     color: black; 
-}
+  }
 
-.divison_of_Art-description p {
-    font-family: Kufam;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: capitalize;
+  p {
     text-align: left; 
     color: black; 
+  }
 }
 
 .botao {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 24px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .botao:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 /* Adicionando alinhamento à esquerda e centralização */
-.art-container {
-    justify-content: flex-start;
+.section-1 {
+  justify-content: flex-start;
 }
 
-.divison_of_Art-container {
-    justify-content: flex-start;
-    padding-right: 20px; /* Adiciona padding à direita para afastar o texto da imagem */
-}
-
-.divison_of_Art-secondimage {
-    margin-left: 10px; /* Move a imagem um pouco para a esquerda */
+.section-2 {
+  justify-content: flex-start;
+  padding-right: 20px; /* Adiciona padding à direita para afastar o texto da imagem */
 }
 
 .exhibitions {
-    background-color: #d4484b;
+  background-color: #d4484b;
+  text-align: center;
+  padding: 20px;
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     color: white;
-    text-align: center;
-    padding: 20px;
-  
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-  
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-  
-    .exhibition-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  
-      .exhibition-item {
-        width: 30%;
-        margin-bottom: 100px;
-        position: relative;
-      }
-      
-      .exhibition-item img {
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #433C3C;
+  }
+
+  .exhibition-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .exhibition-item {
+      width: 30%;
+      margin-bottom: 100px;
+
+      img {
         width: 402px;
         height: 311px;
       }
-      
-      .exhibition-item p {
+
+      p {
         font-size: 1.2rem;
         margin-top: 10px;
         color: black;
         position: relative; /* Para alinhar a caixa branca */
         z-index: 1; /* Garante que o texto esteja acima da caixa branca */
       }
-      
-      .exhibition-item .comment-box {
-        position: absolute;
-        right: 0; /* Posicionando a caixa branca à direita */
-        bottom: -68px; 
-        background-color: white;
-        padding: 10px;
-        border-radius: 10px;
-        box-sizing: border-box;
-        z-index: 0;
-        width: 402px;
+
+      .comment-box {
+        //aquiiiiiiiii
       }
-    }
+    }   
   }
+}
 
   .slider {
     display: flex;
@@ -206,7 +170,7 @@ body {
   .slide img {
     cursor: pointer;
   }
-  
+
   /* Estilos para os controles de navegação */
   .prev, .next {
     cursor: pointer;
