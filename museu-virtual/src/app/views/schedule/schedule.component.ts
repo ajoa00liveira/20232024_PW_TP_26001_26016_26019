@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './schedule.component.scss'
 })
 export class ScheduleComponent {
-
+  
 }

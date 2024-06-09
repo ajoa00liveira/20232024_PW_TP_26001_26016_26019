@@ -1,14 +1,34 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd, Event, RouterOutlet } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { FooterComponent } from './views/footer/footer.component';
+import { NavbarComponent } from './views/navbar/navbar.component';
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone:true,
+  imports:[RouterOutlet,FooterComponent,NavbarComponent]
 })
-export class AppComponent {
-  title = 'Museu Virtual';
+export class AppComponent implements OnInit {
+  title = 'websitemuseus';
+  showFooter: boolean = true;
+  showNavbar: boolean = true;
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.pipe(
+      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.showFooter = this.checkIfFooterShouldBeVisible(event.urlAfterRedirects);
+      this.showNavbar = this.checkIfFooterShouldBeVisible(event.urlAfterRedirects);
+    });
+  }
+
+  checkIfFooterShouldBeVisible(url: string): boolean {
+    const noFooterRoutes = ['page-not-found'];
+    return !noFooterRoutes.some(route => url.includes(route));
+  }
 }

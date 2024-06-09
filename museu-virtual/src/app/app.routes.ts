@@ -9,6 +9,9 @@ import { ScheduleComponent } from './views/schedule/schedule.component';
 import { ArtComponent } from './views/art/art.component';
 
 
+
+
+
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about-us', component: AboutUsComponent},
@@ -17,7 +20,9 @@ export const routes: Routes = [
     { path: 'news', component: NewsComponent},
     { path: 'schedule', component: ScheduleComponent},
     { path: 'art', component:ArtComponent},
+    { path: 'page-not-found',component: PageNotFoundComponent },
 
-    
-    { path: '**', component: PageNotFoundComponent } //Tem de ficar por último
+
+   
+    { path: '**', redirectTo :'page-not-found'} //Tem de ficar por último
 ];
