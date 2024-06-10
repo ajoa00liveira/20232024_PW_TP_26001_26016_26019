@@ -5,6 +5,11 @@
     background-color: #000;
     color: #fff;
     padding: 20px;
+
+    *{ //Todos os filhos de footer
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .footer-left{
@@ -18,5 +23,13 @@
     img{
         width: 70px;
         height: 70px;
+    }
+}
+
+.social-media{
+    
+    a{
+        text-decoration: none;
+        color: #fff;
     }
 }
