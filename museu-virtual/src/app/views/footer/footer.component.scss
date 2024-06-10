@@ -2,30 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px;
 }
 
-.footer-left {
+.footer-left{
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
+.icon-holder{
+    display: flex;
 
-.footer-left img {
-    width: 50px;
-    margin-bottom: 5px;
-}
-
-.social-media a {
-    margin-right: 10px;
-}
-
-.contact-info {
-    text-align: left;
-}
-
-.contact-info p {
-    margin: 5px 0;
+    img{
+        width: 70px;
+        height: 70px;
+    }
 }
