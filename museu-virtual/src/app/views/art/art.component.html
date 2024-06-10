@@ -24,7 +24,7 @@
 </div>
 
 <div class="exhibitions">
-  
+
   <div class="exhibition-text">
     <h2 class="kufam-regular">Exhibitions</h2>
     <p class="kufam-regular">Discover All The Exhibitions We Have To Offer At The Museum!</p>
@@ -65,7 +65,26 @@
 </div>
 
 <div class="gallery">
-  <h2>Photo Gallery</h2>
-  <p>See some photos of our exhibitions!</p>
+  <div class="gallery-text">
+    <h2>Photo Gallery</h2>
+    <p>See some photos of our exhibitions!</p>
+  </div>
+
+  <div class="gallery-display">
+    <div id="big-frame">
+      <img [src]="bigFrameImage" alt="Not loading">
+    </div>
+
+    <div class="small-frames">
+      <img src="../../../assets/images/art/art-display1.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/art-display1.jpg")'>
+      <img src="../../../assets/images/art/sf-art-1.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/sf-art-1.jpg")'>
+      <img src="../../../assets/images/art/sf-art-2.png" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/sf-art-2.png")'>
+      <img src="../../../assets/images/art/sf-art-3.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/sf-art-3.jpg")'>
+      <img src="../../../assets/images/art/sf-art-4.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/sf-art-4.jpg")'>
+      <img src="../../../assets/images/art/sf-art-5.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/art/sf-art-5.jpg")'>
+
+    </div>
+  </div>
+  
 </div>
 

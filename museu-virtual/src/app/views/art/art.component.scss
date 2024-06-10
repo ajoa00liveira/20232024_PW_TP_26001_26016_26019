@@ -234,3 +234,62 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .gallery{
+    height: 1064px;
+
+    .gallery-text{
+      height: 20%;
+  
+      h2 {
+        font-size: 40px;
+        color: white;
+      }
+    
+      p {
+        margin-bottom: 20px;
+        color: #433C3C;
+      }
+    }
+
+    .gallery-display{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .fade-out {
+        opacity: 0; /* Opacidade 0 para esconder a imagem */
+      }
+      
+      .fade-in {
+        opacity: 1; /* Opacidade 1 para exibir a nova imagem */
+      }
+
+      #big-frame{
+        transition: opacity 0.5s ease; /* Transição suave para a opacidade */
+        width: 1134px;
+
+        img{
+          height: 636px;
+          width: 1134px;
+          object-fit: cover;
+        }
+      }
+      .small-frames{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 1134px;
+        height: 173px;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow-x: scroll;
+
+        img{
+          height: 100%;
+          margin-right: 10px;
+          
+        }
+      }
+    }
+  }
