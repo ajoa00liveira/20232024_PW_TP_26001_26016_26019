@@ -10,6 +10,8 @@ import { ArtComponent } from './views/art/art.component';
 import { ContactsComponent } from './views/contacts/contacts.component';
 import { FossilsComponent} from './views/fossils/fossils.component';
 import { EgyptComponent } from './views/egypt/egypt.component';
+import { TicketsComponent } from './views/tickets/tickets.component';
+
 
 
 
@@ -27,6 +29,8 @@ export const routes: Routes = [
     { path: 'page-not-found',component: PageNotFoundComponent },
     { path: 'fossils', component: FossilsComponent},
     { path: 'egypt', component: EgyptComponent},
+    { path: 'tickets', component: TicketsComponent},
+
 
 
    
