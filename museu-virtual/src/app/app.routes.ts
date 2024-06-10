@@ -32,7 +32,8 @@ export const routes: Routes = [
             { path: 'art', component: ExArtComponent},
             { path: 'fossils', component: ExFossilsComponent},
             { path: 'egypt', component: ExEgyptComponent},
-        ]
+            { path: '', redirectTo :'/', pathMatch: 'full'} //Os outros caminhos (child) de exhibition vão para o home
+        ],
     },
    
     { path: '**', redirectTo :'page-not-found'} //Tem de ficar por último
