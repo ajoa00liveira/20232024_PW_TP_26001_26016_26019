@@ -1,60 +1,94 @@
-body {
-    margin: 0; /* Remove as margens padrão do body */
-}
-
-.about-us-container, .about_us-container {
-    display: flex;
-    align-items: center;
-    padding: 0; /* Remove padding para alinhamento perfeito */
-    box-sizing: border-box;
-    width: 100%;
-    height: 500px; /* Ajuste conforme necessário */
-    margin-bottom: 20px; /* Espaçamento entre as seções */
-}
-
-.about-us-container {
-    background: url('../../../assets/images/tiles/brown-tile.png') lightgray center / cover repeat; 
-}
-
-.about-us-image, .about_us-secondimage {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
-    height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
-}
-
-.about-us-description {
+.aboutus-container {
     display: flex;
     flex-direction: column;
-    width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
-    padding: 20px; /* Adiciona padding */
+    justify-content: center; 
     align-items: center;
+    padding: 20px;
 }
 
-.about-museum-box {
+.aboutus-container {
+    height: 700px;
+    background: url('../../../assets/images/tiles/brown-tile.png') repeat; 
+}
+
+.aboutus-container h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    background-clip: text;
+    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50%, #FBBD44 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.history-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na horizontal */
+    justify-content: center; /* Centraliza os itens na vertical */
+    text-align: center; /* Centraliza o texto dentro das divs */
+    max-width: 800px; /* Define a largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.theme-history {
+    margin-top: 20px; /* Adiciona espaço entre cada tema */
+}
+
+.gallery-text {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do elemento */
+}
+
+.gallery-text h2 {
+    font-size: 24px; /* Define o tamanho da fonte para o título */
+    color: #333; /* Define a cor do título */
+}
+
+.gallery-text p {
+    font-size: 16px; /* Define o tamanho da fonte para o parágrafo */
+    color: #666; /* Define a cor do texto do parágrafo */
+}
+.gallery{
+    background: rgba(215, 120, 32, 0.45);
+
+}
+.gallery-display{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 60%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-.text-museum {
-    flex: 1;
-}
-.text-museum h2 {
-    margin: 0 0 10px;
-}
-.text-museum p {
-    margin: 0;
-}
-.image-museum img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-}
+    justify-content: center;
+
+    .fade-out {
+      opacity: 0; /* Opacidade 0 para esconder a imagem */
+    }
+    
+    .fade-in {
+      opacity: 1; /* Opacidade 1 para exibir a nova imagem */
+    }
+
+    #big-frame{
+      transition: opacity 0.5s ease; /* Transição suave para a opacidade */
+      width: 1134px;
+
+      img{
+        height: 636px;
+        width: 1134px;
+        object-fit: cover;
+      }
+    }
+    .small-frames{
+      display: flex;
+      flex-wrap: nowrap;
+      width: 1134px;
+      height: 173px;
+      box-sizing: border-box;
+      padding: 10px;
+      overflow-x: scroll;
+
+      img{
+        height: 100%;
+        margin-right: 10px;      
+      }
+    }
+  }

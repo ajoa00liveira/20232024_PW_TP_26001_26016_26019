@@ -1,21 +1,43 @@
-<div class="about-us-container">
-    <div class="about-us-image">
-        <img src="../../../assets/images/imagem1_container_art.png" alt="Descrição da imagem">
+<div class="aboutus-container kufam-regular">
+    <h1>About-Us</h1>
+</div>
+<div class="history-container kufam-regular">
+    <h2>Our Story</h2>
+    <p>The Origin Museum was founded in 2018 with a vision to showcase the rich history and cultural heritage of civilizations across the globe. Since its inception, the museum has undergone several expansions and renovations to accommodate new themes and exhibits.</p>
+    
+    <div class="theme-history">
+        <h3>Art Gallery</h3>
+        <p>Built in 2018, the Art Gallery features a stunning collection of paintings, sculptures, and artifacts from various periods of art history.</p>
     </div>
-    <div class="about-us-description">
-        <h1>About Us</h1>
-        <p>The Origin Museum offers a captivating journey through art, history, and culture. Explore our diverse collections 
-            and engaging exhibitions that inspire and educate visitors of all ages. Join Us
-        </p>
-        <button class="botao">Tickets</button>
+    
+    <div class="theme-history">
+        <h3>Egyptian Exhibit</h3>
+        <p>The Egyptian Exhibit, established in 2020, transports visitors back in time to ancient Egypt, showcasing mummies, hieroglyphics, and treasures from the pharaohs.</p>
+    </div>
+    <div class="theme-history">
+        <h3>Fossil & Pre-Historic Collection</h3>
+        <p>In 20222, the Fossil Collection was unveiled, presenting a journey through the prehistoric world with dinosaur skeletons, fossils, and interactive exhibits.</p>
     </div>
 </div>
-<div class="about-museum-box">
-    <div class="text-museum">
-        <h2>Título da Caixa</h2>
-        <p>Este é o conteúdo de texto ao lado esquerdo da caixa. Pode incluir várias linhas de texto, descrições ou qualquer outra informação relevante.</p>
+
+<div class="gallery">
+    <div class="gallery-text kufam-regular">
+      <h2>Photo Gallery</h2>
+      <p>See some photos of our exhibitions!</p>
     </div>
-    <div class="image-museum">
-        <img src="../../../assets/images/sculptures_art.jpg" alt="Imagem quadrada">
+  
+    <div class="gallery-display">
+      <div id="big-frame">
+        <img [src]="bigFrameImage" alt="Not loading">
+      </div>
+  
+      <div class="small-frames">
+        <img src="../../../assets/images/home/main_image_section2.png" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/home/main_image_section2.png")'>
+        <img src="../../../assets/images/aboutus/2image.png" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/aboutus/2image.png")'>
+        <img src="../../../assets/images/aboutus/image3.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/aboutus/image3.jpg")'>
+        <img src="../../../assets/images/aboutus/image4.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/aboutus/image4.jpg")'> 
+        <img src="../../../assets/images/aboutus/image6.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/aboutus/image6.jpg")'> 
+        <img src="../../../assets/images/aboutus/image7.jpg" alt="Not loading" (click)='updateBigFrameImage("../../../assets/images/aboutus/image7.jpg")'> 
+      </div>
     </div>
-</div>
+  </div>
