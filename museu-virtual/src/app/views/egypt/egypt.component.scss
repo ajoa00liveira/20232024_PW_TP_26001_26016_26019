@@ -97,12 +97,25 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 24px;
+    text-decoration: none;
   }
   
   .botao:hover {
     background-color: #333;
   }
-  
+  .gallery-text {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do elemento */
+}
+    .exhibition-text h2 {
+      color: white; /* Define a cor do texto para branco */
+    }
+    
+    .gallery-text h2 {
+      
+      color: black; /* Define a cor do texto para preto */
+    }
+
   .exhibitions {
     display: flex;
     flex-direction: column;
@@ -238,16 +251,16 @@
       text-decoration: none;
       cursor: pointer;
     }
-  
+
     .gallery{
       height: 1064px;
   
       .gallery-text{
-        height: 20%;
+        height: 10%;
     
         h2 {
           font-size: 40px;
-          color: white;
+          color: black;
         }
       
         p {
