@@ -4,6 +4,7 @@ import { filter } from 'rxjs/operators';
 import { FooterComponent } from './views/footer/footer.component';
 import { NavbarComponent } from './views/navbar/navbar.component';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
