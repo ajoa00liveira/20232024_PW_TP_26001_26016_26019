@@ -12,14 +12,16 @@
 
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+  display: grid;
+  grid-template-columns: "over";
+  place-items: center;
+
+  img, svg{
+    grid-area: over;
+  }
 }
 
 .blur{
-  position: absolute;
   z-index: 1;
 }
 
