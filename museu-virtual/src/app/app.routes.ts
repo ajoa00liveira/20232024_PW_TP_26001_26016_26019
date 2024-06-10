@@ -7,6 +7,8 @@ import { MapComponent } from './views/map/map.component';
 import { NewsComponent } from './views/news/news.component';
 import { ScheduleComponent } from './views/schedule/schedule.component';
 import { ArtComponent } from './views/art/art.component';
+import { ContactsComponent } from './views/contacts/contacts.component';
+
 
 
 
@@ -20,6 +22,7 @@ export const routes: Routes = [
     { path: 'news', component: NewsComponent},
     { path: 'schedule', component: ScheduleComponent},
     { path: 'art', component:ArtComponent},
+    { path: 'contacts', component:ContactsComponent},
     { path: 'page-not-found',component: PageNotFoundComponent },
 
 

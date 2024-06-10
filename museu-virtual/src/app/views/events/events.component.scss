@@ -1,10 +1,15 @@
 .event-container {
     display: flex;
     flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    background: url('../../../assets/images/tiles/brown-tile.png')  lightgray 0% 0% / 90px 90px repeat;
     padding: 20px;
 }
+
+.event-container  {
+    background: url('../../../assets/images/tiles/brown-tile.png') repeat; 
+    height: 553px;
+  }
 
 .event-container h1 {
     margin-bottom: 10px;

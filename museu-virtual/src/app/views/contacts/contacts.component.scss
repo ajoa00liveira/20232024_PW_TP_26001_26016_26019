@@ -1,0 +1,24 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-container{
+    background: url('../../../assets/images/tiles/brown-tile.png') lightgray 0% 0% / 89.99999761581421px 89.99999761581421px repeat;
+    height: 553px;
+  }
+
+.contact-container h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50.5%, #FBBD44 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
