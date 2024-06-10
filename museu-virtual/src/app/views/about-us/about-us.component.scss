@@ -95,8 +95,10 @@
 
   .mapa-display {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 20px; /* Adiciona preenchimento */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .mapa-wrapper {
@@ -105,5 +107,5 @@
 
 .mapa-wrapper iframe {
     width: 100%; /* Define a largura do iframe como 100% para preencher o wrapper */
-    height: 400px; /* Define a altura do mapa */
+    height: 500px; /* Define a altura do mapa */
 }

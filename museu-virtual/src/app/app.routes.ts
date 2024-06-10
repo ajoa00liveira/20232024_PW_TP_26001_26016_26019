@@ -11,6 +11,8 @@ import { ContactsComponent } from './views/contacts/contacts.component';
 import { FossilsComponent} from './views/fossils/fossils.component';
 import { EgyptComponent } from './views/egypt/egypt.component';
 import { TicketsComponent } from './views/tickets/tickets.component';
+import { EvaluationComponent } from './views/evaluation/evaluation.component';
+
 
 
 
@@ -30,6 +32,9 @@ export const routes: Routes = [
     { path: 'fossils', component: FossilsComponent},
     { path: 'egypt', component: EgyptComponent},
     { path: 'tickets', component: TicketsComponent},
+    { path: 'evaluation', component: EvaluationComponent},
+
+
 
 
 
