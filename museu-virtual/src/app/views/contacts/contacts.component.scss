@@ -1,17 +1,18 @@
-.news-container{
+.contact-container,.send-email, .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+    
     padding: 20px;
 }
 
-.news-container{
+.contact-container{
     background: url('../../../assets/images/tiles/brown-tile.png') repeat;
     height: 553px;
   }
 
-.news-container h1 {
+.contact-container h1 {
     margin-bottom: 10px;
     text-transform: capitalize;
     text-align: center;
@@ -20,19 +21,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.email-input {
+    width: calc(100% - 40px); 
+    padding: 5px; 
+}
 
-/* Estilos para botão "Buy Ticket" */
-.btn-buyticket {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.send-button {
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 24px;
+    background: #3BBCE4;
+    color: white;
+    border: none;
+    padding: 10px 148px; 
+    cursor: pointer; 
 }
 
-.btn-buyticket:hover {
-    background-color: #333;
+.send-button:hover {
+    background: #2a8cad; 
 }
+
