@@ -30,15 +30,13 @@
     margin: 10px;
 }
 
-
-/* Estilos para grade de eventos */
 .news-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .news-item {
@@ -46,10 +44,10 @@
     flex-direction: column;
     align-items: center;
     width: 402px;
-    //height: 406px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out;
 
     img {
         width: 100%;
@@ -60,13 +58,55 @@
     }
 }
 
+.news-item:hover{
+    transform: scale(1.05);
+}
+
 .news-details {
+    padding: 20px;
+
+    p {
+        font-size: 20px;
+        color: #5F5C5C;
+    }
+}
+
+.day-square{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.home-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
     padding: 20px;
 }
 
-.news-details p {
+.news-container p, .home-news-container p {
+    font-family: Kufam;
     font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
     color: #5F5C5C;
+    margin: 10px;
+}
+
+.news-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button{
+        margin: 30px;
+    }
 }
 
 .btn {
