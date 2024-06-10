@@ -1,0 +1,295 @@
+.section-1, .section-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  .section-1 {
+    background: url('../../../assets/images/tiles/green-tile.png') repeat; 
+    height: 553px;
+  }
+  
+  .section-2 {
+    height: 636px;
+  }
+  
+  .left-in-section {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
+    height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
+  }
+  
+  .image-border-1{
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    max-height: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    border: 10px solid #B88840; /* Cor de fundo da moldura */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50); /* Sombra */
+    border-radius: 10px;
+  }
+  
+  .image-border-2{
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    max-height: 80%; /* Garante que as imagens não ultrapassem o contêiner */
+    border-radius: 5px;
+  }
+  
+  .right-in-section-1, .right-in-section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Garante que os contêineres de descrição ocupem metade do espaço disponível */
+    align-items: center;
+    padding-left: 70px;
+  }
+  
+  .right-in-section-1{
+  
+    h1 {
+      font-size: 60px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-align: center;
+      background: linear-gradient(90deg, #FFC700 0%, #E27C05 50%, #FBBD44 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    p {
+      font-weight: 400;
+      text-align: center;
+      color: white; 
+      margin-right: 20px;
+    }
+  }
+  
+  .right-in-section-2{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  
+    h1{
+      font-size: 60px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      color: black; 
+    }
+  
+    p {
+      text-align: left; 
+      color: black; 
+    }
+  }
+  
+  .botao {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .botao:hover {
+    background-color: #333;
+  }
+  
+  .exhibitions {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(36, 159, 48, 0.51);
+    text-align: center;
+    width: 100%;
+    height: 1058px;
+    
+    .exhibition-text{
+      height: 20%;
+  
+      h2 {
+        font-size: 40px;
+        color: white;
+      }
+    
+      p {
+        margin-bottom: 20px;
+        color: #433C3C;
+      }
+    }
+  
+    .exhibition-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      width: 100%;
+      gap:50px;
+      margin-bottom: 80px;
+      box-sizing: border-box;
+  
+      .exhibition-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 402px;
+        height: 406px;
+        z-index: 0;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  
+        img {
+          width: 100%;
+          height: 311px;
+          object-fit: cover;
+          z-index: 1;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+  
+        p {
+          font-size: 24px;
+          color: black;
+          z-index: 1; /* Garante que o texto esteja acima da caixa branca */
+        }
+  
+        .comment-box {
+          z-index: 0;
+        }
+      }   
+    }
+  }
+  
+    .slider {
+      display: flex;
+    }
+    
+    .slide {
+      margin-right: 15px;
+    }
+    
+    .slide img {
+      cursor: pointer;
+    }
+  
+    /* Estilos para os controles de navegação */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    .prev {
+      left: 10px;
+    }
+    
+    .next {
+      right: 10px;
+    }
+    
+    /* Estilos para o modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+    
+    .close {
+      color: #fff;
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    .gallery{
+      height: 1064px;
+  
+      .gallery-text{
+        height: 20%;
+    
+        h2 {
+          font-size: 40px;
+          color: white;
+        }
+      
+        p {
+          margin-bottom: 20px;
+          color: #433C3C;
+        }
+      }
+  
+      .gallery-display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        .fade-out {
+          opacity: 0; /* Opacidade 0 para esconder a imagem */
+        }
+        
+        .fade-in {
+          opacity: 1; /* Opacidade 1 para exibir a nova imagem */
+        }
+  
+        #big-frame{
+          transition: opacity 0.5s ease; /* Transição suave para a opacidade */
+          width: 1134px;
+  
+          img{
+            height: 636px;
+            width: 1134px;
+            object-fit: cover;
+          }
+        }
+        .small-frames{
+          display: flex;
+          flex-wrap: nowrap;
+          width: 1134px;
+          height: 173px;
+          box-sizing: border-box;
+          padding: 10px;
+          overflow-x: scroll;
+  
+          img{
+            height: 100%;
+            margin-right: 10px;
+            
+          }
+        }
+      }
+    }
