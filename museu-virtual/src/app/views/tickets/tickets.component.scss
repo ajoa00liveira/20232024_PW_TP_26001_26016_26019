@@ -1,0 +1,101 @@
+.ticket-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+    padding: 20px;
+}
+
+.ticket-container{
+    background: url('../../../assets/images/tiles/brown-tile.png') repeat;
+    height: 553px;
+  }
+
+.ticket-container h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50.5%, #FBBD44 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.forms-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.forms-container form {
+    width: 100%;
+    max-width: 400px; /* Define a largura máxima do formulário */
+}
+
+.forms-container form div {
+    margin-bottom: 15px;
+}
+
+.forms-container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forms-container form input[type="date"],
+.forms-container form input[type="time"],
+.forms-container form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.forms-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forms-container form button:hover {
+    background-color: #333;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #555;
+}
