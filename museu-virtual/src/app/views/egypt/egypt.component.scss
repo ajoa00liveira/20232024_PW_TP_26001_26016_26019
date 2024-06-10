@@ -20,6 +20,10 @@
     align-items: center; /* Centraliza verticalmente */
     width: 50%; /* Garante que os contêineres de imagem ocupem metade do espaço disponível */
     height: 100%; /* Garante que as imagens ocupem toda a altura do contêiner */
+
+    img{
+      width: 650px;
+    }
   }
   
   .image-border-1{
