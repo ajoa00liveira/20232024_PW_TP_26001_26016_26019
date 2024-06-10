@@ -1,13 +1,14 @@
-.contact-container{
+.contact-container,.send-email, .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+    
     padding: 20px;
 }
 
 .contact-container{
-    background: url('../../../assets/images/tiles/brown-tile.png') lightgray 0% 0% / 89.99999761581421px 89.99999761581421px repeat;
+    background: url('../../../assets/images/tiles/brown-tile.png') repeat;
     height: 553px;
   }
 
@@ -20,5 +21,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.email-input {
+    width: calc(100% - 40px); 
+    padding: 5px; 
+}
 
+.send-button {
+    border-radius: 5px;
+    background: #3BBCE4;
+    color: white;
+    border: none;
+    padding: 10px 148px; 
+    cursor: pointer; 
+}
+
+.send-button:hover {
+    background: #2a8cad; 
+}
 
