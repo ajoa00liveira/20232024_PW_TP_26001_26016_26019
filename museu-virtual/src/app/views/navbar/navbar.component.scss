@@ -11,7 +11,6 @@
   z-index: 0;
 }
 
-
 .logo {
   display: grid;
   grid-template-columns: "over";
@@ -39,8 +38,26 @@
 }
 
 .nav-items.left {
+  display: flex;
   justify-content: flex-end;
   flex: 1;
+
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: auto; /*o auto pega a posiçao relativa*/
+    top: auto;
+    background-color: #120000;
+    width: 100px;
+    height: auto; /* Adjust height to fit content */
+    z-index: 3;
+  }
+  
+  .dropdown-text:hover .dropdown-content {
+    display: flex;
+  }
+  
 }
 
 .nav-items.right {
