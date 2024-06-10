@@ -1,7 +1,34 @@
 {
-  "locale": "en-US",
+  "locale": "pt-PT",
   "translations": {
-    "1737753151350322492": "{$PH}",
-    "629292117839069224": "home funciona!"
+    "5743222183212371644": "Museu da Origem",
+    "8330035333250300642": "Redes Sociais:",
+    "5167393594548714777": "Informações de Contato:",
+    "7582551541511820468": "Endereço: IPCA Rua da EST, Lugar do Aldão, Barcelos, 4750-810",
+    "7294031105482686140": "Telefone: +351 913 055 230",
+    "8846096047583378021": "Junte-se a esta jornada para Descobrir {$LINE_BREAK}As origens do Mundo!",
+    "6489274222926236428": "O Museu da Origem Oferece Uma Jornada Cativante Através da Arte, História e Cultura. Explore Nossas Diversas Coleções {$LINE_BREAK} E Exposições Envolventes Que Inspiram e Educam Visitantes de Todas as Idades. Junte-se a Nós",
+    "8265500184685762525": "Bilhetes",
+    "2857587999825290192": "Arte",
+    "6724050522405858430": "Egito",
+    "400432072533070092": "Fósseis",
+    "3560806844067396749": "História do museu da origem",
+    "2820246732416720727": "O museu da origem abriu em 2023 e possui uma grande variedade de obras de arte, relíquias, peças extraordinárias e muitos eventos! Com o apoio de Gonçalo Gonçalves, João Oliveira e Rui Rodrigues, foi possível construir uma grande mística para a cidade de Barcelos e para Portugal.",
+    "115930618352415341": "Saiba Mais",
+    "841934696444961534": "Notícias",
+    "2103022318074802119": "Mantenha-se atualizado com todas as nossas notícias e atualizações!",
+    "7900940975828144042": "Novo fóssil encontrado será exibido no Museu da Origem",
+    "8957698437063485975": "Um novo fóssil de um dinossauro que estava extinto há mais de 252 milhões de anos foi encontrado na Mongólia. Pesquisadores determinaram que poderia ser um novo tipo de predador.",
+    "1965332745369272492": "1º aniversário da Divisão do Antigo Egito agendado para 10 de julho!",
+    "3897236109914519078": "Para celebrar o 1º aniversário da abertura da Divisão do Antigo Egito, será realizado um evento para o qual todos estão convidados! Teremos várias atividades e comida.",
+    "3651940266984913214": "Pintura foi restaurada e devolvida ao museu da origem!",
+    "4687253843670454640": "A pintura \"Harvest Delight\" será novamente apresentada no museu da origem. Tinha saído da apresentação para restauração. Será devolvida em 23 de junho!",
+    "5729418620241283277": "Eventos",
+    "2753538838181504574": "➜Arte",
+    "8483797320299727104": "➜Egito",
+    "6472974718708695268": "➜Fósseis",
+    "5988661743089198019": "Avaliação",
+    "5945986349492910662": "Contatos",
+    "5736481176444461852": "Sobre Nós"
   }
 }

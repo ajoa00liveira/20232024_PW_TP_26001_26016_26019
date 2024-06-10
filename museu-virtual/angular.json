@@ -26,8 +26,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize":[
-              "pt-PT"
+            "localize":[ 
+              "en-US"
             ],
             "outputPath": "dist/museu-virtual",
             "index": "src/index.html",
