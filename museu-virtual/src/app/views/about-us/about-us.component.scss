@@ -7,7 +7,7 @@
 }
 
 .aboutus-container {
-    height: 700px;
+    height: 500px;
     background: url('../../../assets/images/tiles/brown-tile.png') repeat; 
 }
 
@@ -92,3 +92,18 @@
       }
     }
   }
+
+  .mapa-display {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona preenchimento */
+}
+
+.mapa-wrapper {
+    width: 80%; /* Define a largura do mapa */
+}
+
+.mapa-wrapper iframe {
+    width: 100%; /* Define a largura do iframe como 100% para preencher o wrapper */
+    height: 400px; /* Define a altura do mapa */
+}
