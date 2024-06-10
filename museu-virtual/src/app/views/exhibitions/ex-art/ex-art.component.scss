@@ -1,0 +1,27 @@
+.section-1 {
+    background: url('../../../../assets/images/tiles/red-tile.png') repeat; 
+    height: 553px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-align: center;
+        background: linear-gradient(90deg, #FFC700 0%, #E27C05 50%, #FBBD44 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+    p {
+        font-weight: 400;
+        text-align: center;
+        color: white; 
+        margin-right: 20px;
+    }
+}
+
