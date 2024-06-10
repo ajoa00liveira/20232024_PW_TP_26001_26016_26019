@@ -8,7 +8,7 @@ import { NewsComponent } from './views/news/news.component';
 import { ScheduleComponent } from './views/schedule/schedule.component';
 import { ArtComponent } from './views/art/art.component';
 import { ContactsComponent } from './views/contacts/contacts.component';
-
+import { FossilsComponent} from './views/fossils/fossils.component';
 
 
 
@@ -24,6 +24,7 @@ export const routes: Routes = [
     { path: 'art', component:ArtComponent},
     { path: 'contacts', component:ContactsComponent},
     { path: 'page-not-found',component: PageNotFoundComponent },
+    { path: 'fossils', component: FossilsComponent},
 
 
    
