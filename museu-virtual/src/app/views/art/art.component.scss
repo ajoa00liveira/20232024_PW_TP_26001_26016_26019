@@ -102,6 +102,20 @@
 .botao:hover {
   background-color: #333;
 }
+      .gallery-text {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do elemento */
+    }
+    
+    .gallery-text h2 {
+        font-size: 24px; /* Define o tamanho da fonte para o título */
+        color: #333; /* Define a cor do título */
+    }
+    
+    .gallery-text p {
+        font-size: 16px; /* Define o tamanho da fonte para o parágrafo */
+        color: #666; /* Define a cor do texto do parágrafo */
+    }
 
 .exhibitions {
   display: flex;
@@ -114,10 +128,10 @@
   
   .exhibition-text{
     height: 20%;
+    color: white; 
 
     h2 {
       font-size: 40px;
-      color: white;
     }
   
     p {
@@ -243,11 +257,12 @@
     height: 1064px;
 
     .gallery-text{
-      height: 20%;
+      height: 10%;
+
   
       h2 {
         font-size: 40px;
-        color: white;
+        color: rgb(0, 0, 0);
       }
     
       p {
