@@ -1,0 +1,72 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: url('../../../assets/images/tiles/brown-tile.png') repeat;
+    height: 553px;
+}
+
+.home-container h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #FFC700 0%, #E27C05 50.5%, #FBBD44 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-container p {
+    color: white;
+}
+
+/* Estilos para botão "Buy Ticket" */
+.btn-buyticket {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.btn-buyticket:hover, .btn-read:hover {
+    background-color: #333;
+}
+
+.themes {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 380px;
+    height: 475px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 140px;
+    margin-right: auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

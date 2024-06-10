@@ -3,6 +3,8 @@ import { Router, NavigationEnd, Event, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { FooterComponent } from './views/footer/footer.component';
 import { NavbarComponent } from './views/navbar/navbar.component';
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
+
 
 
 @Component({
@@ -10,6 +12,7 @@ import { NavbarComponent } from './views/navbar/navbar.component';
   templateUrl: './app.component.html',
   standalone:true,
   imports:[RouterOutlet,FooterComponent,NavbarComponent]
+  
 })
 export class AppComponent implements OnInit {
   title = 'websitemuseus';
