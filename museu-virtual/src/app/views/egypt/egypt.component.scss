@@ -6,7 +6,7 @@
   }
   
   .section-1 {
-    background: url('../../../assets/images/tiles/green-tile.png') repeat; 
+    background: url('../../../assets/images/tiles/yellow-tile.png') repeat; 
     height: 553px;
   }
   
@@ -120,7 +120,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: rgba(36, 159, 48, 0.51);
+    background: rgba(186, 128, 43, 0.51);
     text-align: center;
     width: 100%;
     height: 1058px;
@@ -309,4 +309,19 @@
           }
         }
       }
+    }
+    .botao_ver {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block; /* Tornar o link um elemento de bloco */
+      width: fit-content; /* Ajustar a largura ao conteúdo */
+      margin: 0 auto 60px; /* Margem automática à esquerda e à direita, 20px na parte inferior */
+      text-align: center; /* Centralizar o texto */
+      text-decoration: none;
+      font-size: 24px;
+  
     }
