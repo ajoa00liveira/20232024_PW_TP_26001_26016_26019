@@ -10,13 +10,9 @@ import { FossilsComponent} from './views/fossils/fossils.component';
 import { EgyptComponent } from './views/egypt/egypt.component';
 import { TicketsComponent } from './views/tickets/tickets.component';
 import { EvaluationComponent } from './views/evaluation/evaluation.component';
-import {ExhibitionsComponent } from './views/exhibitions/exhibitions.component';
-
-
-
-
-
-
+import { ExArtComponent } from './views//exhibitions/ex-art/ex-art.component';
+import { ExFossilsComponent } from './views//exhibitions/ex-fossils/ex-fossils.component';
+import { ExEgyptComponent } from './views//exhibitions/ex-egypt/ex-egypt.component';
 
 
 export const routes: Routes = [
@@ -31,13 +27,9 @@ export const routes: Routes = [
     { path: 'egypt', component: EgyptComponent},
     { path: 'tickets', component: TicketsComponent},
     { path: 'evaluation', component: EvaluationComponent},
-    { path: 'exhibitions', component: ExhibitionsComponent},
-
-
-
-
-
-
+    { path: 'exhibitionArt', component: ExArtComponent},
+    { path: 'exhibitionFossils', component: ExFossilsComponent},
+    { path: 'exhibitionEgypt', component: ExEgyptComponent},
    
     { path: '**', redirectTo :'page-not-found'} //Tem de ficar por último
 ];
