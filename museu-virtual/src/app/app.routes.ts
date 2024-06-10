@@ -27,9 +27,13 @@ export const routes: Routes = [
     { path: 'egypt', component: EgyptComponent},
     { path: 'tickets', component: TicketsComponent},
     { path: 'evaluation', component: EvaluationComponent},
-    { path: 'exhibitionArt', component: ExArtComponent},
-    { path: 'exhibitionFossils', component: ExFossilsComponent},
-    { path: 'exhibitionEgypt', component: ExEgyptComponent},
+    { path: 'exhibition', 
+        children: [
+            { path: 'art', component: ExArtComponent},
+            { path: 'fossils', component: ExFossilsComponent},
+            { path: 'egypt', component: ExEgyptComponent},
+        ]
+    },
    
     { path: '**', redirectTo :'page-not-found'} //Tem de ficar por último
 ];
