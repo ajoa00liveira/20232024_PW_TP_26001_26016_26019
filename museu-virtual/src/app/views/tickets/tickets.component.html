@@ -1,6 +1,7 @@
 <div class="ticket-container kufam-regular">
     <h1>Tickets</h1>
 </div>
+
 <div class="forms-container kufam-regular">
     <form (submit)="onFormSubmit($event)">
         <div>
@@ -15,3 +16,20 @@
     </form>
 </div>
 
+<!-- Pop-up container for success message -->
+<div id="popup-success" class="popup">
+    <div class="popup-content">
+        <span class="close-button" (click)="closePopup('popup-success')">&times;</span>
+        <h2>Success!</h2>
+        <p>{{ popupMessage }}</p>
+    </div>
+</div>
+
+<!-- Pop-up container for error message -->
+<div id="popup-error" class="popup">
+    <div class="popup-content">
+        <span class="close-button" (click)="closePopup('popup-error')">&times;</span>
+        <h2>Error!</h2>
+        <p>{{ popupMessage }}</p>
+    </div>
+</div>

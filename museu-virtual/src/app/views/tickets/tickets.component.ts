@@ -2,59 +2,53 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-tickets',
-  standalone: true,
-  imports: [],
   templateUrl: './tickets.component.html',
-  styleUrl: './tickets.component.scss'
+  styleUrls: ['./tickets.component.scss']
 })
 export class TicketsComponent {
+  popupMessage: string = ''; // Mensagem a ser exibida no pop-up
+
   constructor() {}
 
   onFormSubmit(event: Event): void {
     event.preventDefault(); // Previne o comportamento padrão de envio do formulário
 
     const formData = new FormData(event.target as HTMLFormElement);
-    const date = new Date(formData.get('date') as string);
+    const dateString = formData.get('date') as string;
     const quantity = Number(formData.get('quantity')); // Converte a quantidade para número
+    const date = new Date(dateString);
 
-    if (!date || !quantity) {
-      alert('Por favor, preencha todos os campos.');
-      return; // Interrompe o processamento se algum campo estiver vazio
+    if (!dateString || !quantity) {
+      this.openPopup('popup-error', 'Please fill in all fields.');
+      return;
     }
 
     if (date < new Date()) {
-      alert('A data selecionada não pode ser anterior à data atual.');
-      return; // Interrompe o processamento se a data for anterior à atual
-    }
-    
-    if (date < new Date()) {
-      alert('A data selecionada não pode ser anterior à data atual.');
-      return; // Interrompe o processamento se a data for anterior à atual
+      this.openPopup('popup-error', 'The selected date cannot be in the past.');
+      return;
     }
 
     if (quantity <= 0) {
-      alert('A quantidade de bilhetes deve ser maior que zero.');
-      return; // Interrompe o processamento se a quantidade for menor ou igual a zero
+      this.openPopup('popup-error', 'The number of tickets must be greater than zero.');
+      return;
     }
 
-
-    const confirmationMessage = `Compra realizada com sucesso!\nData: ${date.toDateString()}\nQuantidade: ${quantity}`;
-    alert(confirmationMessage);
+    const confirmationMessage = `Purchase successful!\nDate: ${date.toDateString()}\nQuantity: ${quantity}`;
+    this.openPopup('popup-success', confirmationMessage);
   }
 
-  private isWithinOpeningHours(time: string): boolean {
-    const openingTimeUTC = this.getLocalTimeUTC(8, 0); // Converte a hora de abertura local para UTC
-    const closingTimeUTC = this.getLocalTimeUTC(22, 0); // Converte a hora de fechamento local para UTC
-
-    const selectedTimeUTC = this.getLocalTimeUTC(Number(time.split(':')[0]), Number(time.split(':')[1])); // Converte o horário selecionado para UTC
-
-    return selectedTimeUTC >= openingTimeUTC && selectedTimeUTC <= closingTimeUTC;
+  openPopup(popupId: string, message: string): void {
+    this.popupMessage = message;
+    const popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'block';
+    }
   }
 
-  private getLocalTimeUTC(hours: number, minutes: number): Date {
-    const localTime = new Date();
-    localTime.setHours(hours, minutes, 0); // Define a hora local
-    const utcTime = new Date(localTime.getTime() + localTime.getTimezoneOffset() * 60000); // Converte para UTC
-    return utcTime;
+  closePopup(popupId: string): void {
+    const popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'none';
+    }
   }
 }

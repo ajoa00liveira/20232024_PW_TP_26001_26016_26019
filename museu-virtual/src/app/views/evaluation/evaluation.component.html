@@ -1,10 +1,6 @@
-<div class="evaluation-1container kufam-regular">
-    <h1>Evaluation</h1>
-</div>
-
 <div class="evaluation-container kufam-regular">
     <h1>Evaluation</h1>
-    <form class="evaluation-form" onsubmit="return onFormSubmit()">
+    <form class="evaluation-form" (submit)="onFormSubmit($event)">
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -29,4 +25,13 @@
         </div>
         <button type="submit">Submit</button>
     </form>
+</div>
+
+<!-- Pop-up container -->
+<div id="evaluation-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-button" (click)="closePopup()">&times;</span>
+        <h2>Thank you!</h2>
+        <p id="popup-message">Your evaluation has been submitted.</p>
+    </div>
 </div>
