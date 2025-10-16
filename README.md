@@ -1,6 +1,6 @@
 # 🏛️ Origin Museum – Virtual Exhibition Website
 
-> A web application developed as part of the **Web Programming** course at the Polytechnic Institute, created to digitally represent and promote the **Museu Origin**, a cultural space dedicated to **Art**, **Jurassic History**, and **Ancient Egypt**.
+> ### DISCLAIMER: This academic project presents a fictional museum and location created solely for educational purposes. It was designed to make the learning experience more immersive during our coursework.
 
 <img alt="Page Preview" src="https://github.com/user-attachments/assets/90b9568c-b582-4143-b6ba-eb5f23edf1f2" />
 
@@ -18,8 +18,6 @@ The website was built with a focus on **clean design**, **usability**, and **edu
 
 The project was inspired by the idea of giving the **Museu Origin** in Barcelos a modern, digital presence that matches its cultural richness.  
 Our team wanted to **extend access to culture**, combining creativity, optimization, and innovation through a seamless online experience.
-
-#### DISCLAIMER: This project is built upon a **fictional** museum/location
 
 ---
 
