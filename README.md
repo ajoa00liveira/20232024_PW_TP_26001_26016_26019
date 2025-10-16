@@ -1,6 +1,6 @@
 # 🏛️ Origin Museum – Virtual Exhibition Website
 
-> A web application developed as part of the **Web Programming** course at the Polytechnic Institute, created to digitally represent and promote the **Museu Origin** — a cultural space dedicated to **Art**, **Jurassic History**, and **Ancient Egypt**.
+> A web application developed as part of the **Web Programming** course at the Polytechnic Institute, created to digitally represent and promote the **Museu Origin**, a cultural space dedicated to **Art**, **Jurassic History**, and **Ancient Egypt**.
 
 <img alt="Page Preview" src="https://github.com/user-attachments/assets/90b9568c-b582-4143-b6ba-eb5f23edf1f2" />
 
@@ -8,7 +8,7 @@
 
 ## 🌍 Overview
 
-**Origin Museum** is a virtual museum platform designed to offer visitors an interactive and informative experience about the museum’s three main thematic areas — **Art**, **Jurassic History**, and **Ancient Egypt**.
+**Origin Museum** is a virtual museum platform designed to offer visitors an interactive and informative experience about the museum’s three main thematic areas such as **Art**, **Jurassic History**, and **Ancient Egypt**.
 
 The website was built with a focus on **clean design**, **usability**, and **educational content**, allowing users to explore exhibitions, upcoming events, the museum’s history, and even purchase tickets online.
 
